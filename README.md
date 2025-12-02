@@ -30,8 +30,7 @@ My goal is clear: **identify threats before they become critical incidents**, by
 
 ### 🔹 Threat Intelligence
 - MITRE ATT&CK  
-- Sigma rules  
-- YARA rules  
+- OSSIM 
 - VirusTotal / AbuseIPDB
 
 ### 🔹 Environnements
@@ -46,7 +45,7 @@ My goal is clear: **identify threats before they become critical incidents**, by
 📁 [`projects/setting-up-lab`](projects/setting-up-lab/README.md)  
 🛠 VMware or Virtual Box, Windows Server 2019 and 2022, windows 10 or 11, Kali Linux or Parrot security, Ubuntu(Linux)
 
-### 🔸 2. incidents, events and logging
+### 🔸 2. Incidents, Events and Logging
 📁 [`projects/configuring-monitoring-and-analyzing-windows-logs`](projects/configuring-monitoring-and-analyzing-windows-logs/README.md)  
 🛠 SNORT, Regex, Alerting, MITRE
 
@@ -59,16 +58,37 @@ My goal is clear: **identify threats before they become critical incidents**, by
 📁 [`projects/collecting-logs-using-splunk`](projects/collecting-logs-using-splunk/README.md)  
 🛠 SNORT, Regex, Alerting, MITRE
 
-### 🔸 3. Detection & alerts on SQL injection attempts
-📁 [`projects/sql-injection-detection`](projects/sql-injection-detection/README.md)  
+### 🔸 3. Incidents Detection with SIEM
+📁 [`projects/brute-force-detection-and-alert`](projects/brute-force-detection-and-alert/README.md)  
 🛠 SNORT, Regex, Alerting, MITRE
 
-### 🔸 4. Creating a Brute Force Alert in Splunk
-📁 [`projects/brute-force-splunk`](projects/brute-force-splunk/README.md)  
+📁 [`projects/sql-injection-detection-and alert`](projects/sql-injection-detection-and-alert/README.md)  
+🛠 SNORT, Regex, Alerting, MITRE
+
+📁 [`projects/network-scanning-detection-and-alert`](projects/network-scanning-detection-and-alert/README.md)  
+🛠 SNORT, Regex, Alerting, MITRE
+
+### 🔸 4. Improved Incident Detection with Threat Intelligence
+📁 [`projects/Integration-of-IoCs-into-the-ELK-suite-to-detect-threats`](projects/Integration-of-IoCs-into-the-ELK-suite-to-detect-threats/README.md)  
 🛠 Splunk SPL, Windows Events 4624/4625, Dashboard
 
-### 🔸 4. Log detection & analysis with SNORT 
-📁 [`projects/snort-detection`](projects/snort-detection/README.md)  
+📁 [`projects/Integration-of-OTX-threat-data-into-OSSIM`](projects/Integration-of-OTX-threat-data-into-OSSIM/README.md)  
+🛠 Splunk SPL, Windows Events 4624/4625, Dashboard
+
+📁 [`projects/Integration-of-OSSIM-Threat-Intelligence-capability`](projects/Integration-of-OSSIM-Threat-Intelligence-capability/README.md)  
+🛠 Splunk SPL, Windows Events 4624/4625, Dashboard
+
+### 🔸 5. Incident Response 
+📁 [`projects/Generating-tickets-for-incidents`](projects/Generating-tickets-for-incidents/README.md)  
+🛠 IDS Rules, PCAP analysis, classification
+
+📁 [`projects/Contain-data-loss-incidents`](projects/Contain-data-loss-incidents/README.md)  
+🛠 IDS Rules, PCAP analysis, classification
+
+📁 [`projects/Recovery-from-data-loss-incidents`](projects/Recovery-from-data-loss-incidents/README.md)  
+🛠 IDS Rules, PCAP analysis, classification
+
+📁 [`projects/Creating-incident-reports-using-OSSIM`](projects/Creating-incident-reports-using-OSSIM/README.md)  
 🛠 IDS Rules, PCAP analysis, classification
 
 ---
