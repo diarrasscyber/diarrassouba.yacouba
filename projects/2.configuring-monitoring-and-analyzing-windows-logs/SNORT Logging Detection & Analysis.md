@@ -50,7 +50,7 @@ ls
 -Enable line numbering in Nano:
 ALT + N
 Edit line 65
-Replace: any With:192.168.103.0/24
+Replace: any With:192.168.103.0/24 for all network or used 192.168.103.19/24 for only windows19 where IIS and FTP server are installed
 Save and exit.
 -Validate Snort Configuration: sudo snort -T -c /etc/snort/snort.conf
 -Start Snort in Alert Mode: sudo snort -A console -q -c /etc/snort/snort.conf -i ens33
