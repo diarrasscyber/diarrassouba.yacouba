@@ -61,8 +61,8 @@ Save and exit.
 
 # 5️⃣ Add Detection Rules in Snort
 
-Navigate to the rules directory:cd /etc/snort/rules
-Edit the local.rules file:sudo nano /etc/snort/rules/local.rules
+-Navigate to the rules directory:cd /etc/snort/rules
+
 **Add the following detection rules:**
 # ICMP attempt on Windows Server 2019
 alert icmp any any -> 192.168.103.19 any (msg:"ICMP connection attempt"; itype:8; sid:100001; rev:1;)
