@@ -125,5 +125,56 @@ Right-click → Restart
 
 <img width="945" height="257" alt="image" src="https://github.com/user-attachments/assets/7aa40f2a-799d-444b-853c-a67043a71a29" />
 
+## 3️⃣ Installing Splunk Universal Forwarder on Ubuntu (SNORT VM)
+
+This section explains how to install and configure Splunk Universal Forwarder on an Ubuntu machine running SNORT, allowing SNORT logs to be collected and forwarded to the Splunk Enterprise server.
+
+**Download Splunk Universal Forwarder for Ubuntu**
+
+-Create a Splunk account and download the Linux (.deb) Universal Forwarder package or use the direct download link:
+
+sudo wget -O splunkforwarder-10.0.2-e2d18b4767e9-linux-amd64.deb \
+https://download.splunk.com/products/universalforwarder/releases/10.0.2/linux/splunkforwarder-10.0.2-e2d18b4767e9-linux-amd64.deb
+
+-Move the installer into /opt: sudo mv splunkforwarder-10.0.2-e2d18b4767e9-linux-amd64.deb /opt
+
+**Install Splunk Forwarder**
+
+Navigate to /opt and install:
+cd /opt
+sudo apt install ./splunkforwarder-10.0.2-e2d18b4767e9-linux-amd64.deb
+
+**Accept License and Create Admin User**
+
+sudo ./splunk --accept-license
+Enter:
+Admin username: admin
+Password: P@ssw0rd
+
+-Add the Splunk Enterprise Server as a Forward Destination
+sudo ./splunk add forward-server 192.168.103.22:9997
+
+Enter:
+Username: admin
+Password: P@ssw0rd
+
+-Verify outputs.conf Configuration
+
+-Navigate to the configuration folder:
+
+cd /opt/splunkforwarder/etc/system/local
+sudo nano outputs.conf
+Do not modify anything here; just verify that the configuration exists Press CTRL + X to exit
+
+**Enable Monitoring of SNORT Logs**
+
+-Go back to the Splunk Forwarder bin directory:
+
+cd /opt/splunkforwarder/bin
+sudo ./splunk add monitor /var/log/snort
+
+This enables Splunk to forward all SNORT logs.
+
+
 
 
