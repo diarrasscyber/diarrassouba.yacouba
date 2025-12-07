@@ -1,4 +1,4 @@
-<h1 align="center">🛡️ Portfolio SOC Analyst – DIARRASSOUBA Yacouba</h1>
+<h1 align="center">🛡️ Portfolio SOC Analyst</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Cybersecurity-Blue%20Team-blue?style=for-the-badge" />
